@@ -5,4 +5,4 @@ CSCI-19A
 Mr. Manny Kang
 19 July 2018
 Project Proposal: Ball Collisions on Android Phone
-      We propose the creation of an app for the Android OS which displays a moving ball on the user’s screen. The ball will bounce off the walls. In the future, a second ball may be added. Upon addition of a second ball, the code will likely support the addition of an arbitrary amount of balls, up to the phone’s memory limits of course.
+      We propose the creation of an app for the Android OS which displays a moving ball on the user’s screen. The ball will bounce off the walls. In future updates, a second ball may be added. Upon addition of a second ball, the code will likely support the addition of an arbitrary amount of balls, up to the phone’s memory limits of course.
