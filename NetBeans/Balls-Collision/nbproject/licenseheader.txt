@@ -1,0 +1,7 @@
+// Authors: 	Khoa Le, Huyen Nguyen, & Jove Rogers
+// School: 	Chabot College
+// Instructor:	Manny Kang
+// Course:	CSCI-19A
+// Create date:	
+// Unlicensed
+
