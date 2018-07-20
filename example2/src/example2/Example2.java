@@ -23,7 +23,7 @@ public class Example2
         int[] factors = factorization( n );
         print( factors );
     }
-    
+    // test
     static int[] factorization( int n )
     {
         int[] factors = new int[30];
