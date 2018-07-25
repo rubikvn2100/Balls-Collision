@@ -1,0 +1,509 @@
+# depslib dependency file v1.0
+1475251475 source:d:\khoacplusplus\ball_collision_project_v1\bgi.cxx
+
+1475251475 source:d:\khoacplusplus\ball_collision_project_v1\bgiout.cxx
+
+1475251475 source:d:\khoacplusplus\ball_collision_project_v1\dibutil.cxx
+	<windows.h>
+	<assert.h>
+	"dibapi.h"
+	"dibutil.h"
+	<stdio.h>
+
+1475251475 d:\khoacplusplus\ball_collision_project_v1\dibapi.h
+
+1475251475 d:\khoacplusplus\ball_collision_project_v1\dibutil.h
+
+1475251475 source:d:\khoacplusplus\ball_collision_project_v1\drawing.cxx
+	<windows.h>
+	<windowsx.h>
+	<math.h>
+	<ocidl.h>
+	<olectl.h>
+	<string.h>
+	"winbgim.h"
+	"winbgitypes.h"
+	"dibapi.h"
+	<iostream>
+
+1475251475 d:\khoacplusplus\ball_collision_project_v1\winbgim.h
+	<windows.h>
+	<limits.h>
+	<sstream>
+
+1475251475 d:\khoacplusplus\ball_collision_project_v1\winbgitypes.h
+	<windows.h>
+	<tchar.h>
+	<queue>
+	<string>
+	"winbgim.h"
+	<vector>
+
+1475251475 source:d:\khoacplusplus\ball_collision_project_v1\file.cxx
+	<windows.h>
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<io.h>
+	<direct.h>
+	<stdlib.h>
+	"dibutil.h"
+	"dibapi.h"
+	"winbgitypes.h"
+
+1475895369 source:d:\khoacplusplus\ball_collision_project_v1\main.cpp
+	<conio.h>
+	<stdlib.h>
+	<math.h>
+	<time.h>
+	<iostream>
+	<iomanip>
+	"graphics.h"
+	"BALL.H"
+	"PAIR.H"
+	"WALL.H"
+	"BALLFIELD.H"
+
+1475251475 d:\khoacplusplus\ball_collision_project_v1\graphics.h
+	<windows.h>
+	<limits.h>
+	<sstream>
+
+1475556713 d:\khoacplusplus\ball_collision_project_v1\ball.h
+	"graphics.h"
+
+1475891009 d:\khoacplusplus\ball_collision_project_v1\pair.h
+	<math.h>
+
+1475891296 d:\khoacplusplus\ball_collision_project_v1\wall.h
+
+1475895574 d:\khoacplusplus\ball_collision_project_v1\ballfield.h
+
+1475251475 source:d:\khoacplusplus\ball_collision_project_v1\misc.cxx
+	<windows.h>
+	<windowsx.h>
+	"winbgim.h"
+	"winbgitypes.h"
+	<iostream>
+
+1475251475 source:d:\khoacplusplus\ball_collision_project_v1\mouse.cxx
+	<windows.h>
+	<windowsx.h>
+	"winbgim.h"
+	"winbgitypes.h"
+
+1475251475 source:d:\khoacplusplus\ball_collision_project_v1\palette.cxx
+	<windows.h>
+	<windowsx.h>
+	"winbgim.h"
+	"winbgitypes.h"
+
+1475251475 source:d:\khoacplusplus\ball_collision_project_v1\text.cxx
+	<windows.h>
+	<windowsx.h>
+	<iostream>
+	<sstream>
+	<string>
+	"winbgim.h"
+	"winbgitypes.h"
+
+1475251475 source:d:\khoacplusplus\ball_collision_project_v1\winbgi.cxx
+	<windows.h>
+	<windowsx.h>
+	<stdio.h>
+	<iostream>
+	<vector>
+	"winbgim.h"
+	"winbgitypes.h"
+
+1475251475 source:d:\khoacplusplus\ball_collision_project_v1\winthread.cxx
+	<windows.h>
+	<windowsx.h>
+	"winbgim.h"
+	"winbgitypes.h"
+	<vector>
+	<queue>
+	<iostream>
+	<iostream>
+
+1475251475 source:d:\khoacplusplus\ball_collision_project_v2\bgi.cxx
+
+1475251475 source:d:\khoacplusplus\ball_collision_project_v2\bgiout.cxx
+
+1475251475 source:d:\khoacplusplus\ball_collision_project_v2\dibutil.cxx
+	<windows.h>
+	<assert.h>
+	"dibapi.h"
+	"dibutil.h"
+	<stdio.h>
+
+1475251475 d:\khoacplusplus\ball_collision_project_v2\dibapi.h
+
+1475251475 d:\khoacplusplus\ball_collision_project_v2\dibutil.h
+
+1475251475 source:d:\khoacplusplus\ball_collision_project_v2\drawing.cxx
+	<windows.h>
+	<windowsx.h>
+	<math.h>
+	<ocidl.h>
+	<olectl.h>
+	<string.h>
+	"winbgim.h"
+	"winbgitypes.h"
+	"dibapi.h"
+	<iostream>
+
+1475251475 d:\khoacplusplus\ball_collision_project_v2\winbgim.h
+	<windows.h>
+	<limits.h>
+	<sstream>
+
+1475251475 d:\khoacplusplus\ball_collision_project_v2\winbgitypes.h
+	<windows.h>
+	<tchar.h>
+	<queue>
+	<string>
+	"winbgim.h"
+	<vector>
+
+1475251475 source:d:\khoacplusplus\ball_collision_project_v2\file.cxx
+	<windows.h>
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<io.h>
+	<direct.h>
+	<stdlib.h>
+	"dibutil.h"
+	"dibapi.h"
+	"winbgitypes.h"
+
+1476154316 source:d:\khoacplusplus\ball_collision_project_v2\main.cpp
+	<conio.h>
+	<stdlib.h>
+	<math.h>
+	<time.h>
+	<iostream>
+	<iomanip>
+	"graphics.h"
+	"BALL.H"
+	"PAIR.H"
+	"WALL.H"
+	"BALLFIELD.H"
+
+1475251475 d:\khoacplusplus\ball_collision_project_v2\graphics.h
+	<windows.h>
+	<limits.h>
+	<sstream>
+
+1475556713 d:\khoacplusplus\ball_collision_project_v2\ball.h
+	"graphics.h"
+
+1475891009 d:\khoacplusplus\ball_collision_project_v2\pair.h
+	<math.h>
+
+1476153197 d:\khoacplusplus\ball_collision_project_v2\wall.h
+
+1476154316 d:\khoacplusplus\ball_collision_project_v2\ballfield.h
+
+1475251475 source:d:\khoacplusplus\ball_collision_project_v2\misc.cxx
+	<windows.h>
+	<windowsx.h>
+	"winbgim.h"
+	"winbgitypes.h"
+	<iostream>
+
+1475251475 source:d:\khoacplusplus\ball_collision_project_v2\mouse.cxx
+	<windows.h>
+	<windowsx.h>
+	"winbgim.h"
+	"winbgitypes.h"
+
+1475251475 source:d:\khoacplusplus\ball_collision_project_v2\palette.cxx
+	<windows.h>
+	<windowsx.h>
+	"winbgim.h"
+	"winbgitypes.h"
+
+1475251475 source:d:\khoacplusplus\ball_collision_project_v2\text.cxx
+	<windows.h>
+	<windowsx.h>
+	<iostream>
+	<sstream>
+	<string>
+	"winbgim.h"
+	"winbgitypes.h"
+
+1475251475 source:d:\khoacplusplus\ball_collision_project_v2\winbgi.cxx
+	<windows.h>
+	<windowsx.h>
+	<stdio.h>
+	<iostream>
+	<vector>
+	"winbgim.h"
+	"winbgitypes.h"
+
+1475251475 source:d:\khoacplusplus\ball_collision_project_v2\winthread.cxx
+	<windows.h>
+	<windowsx.h>
+	"winbgim.h"
+	"winbgitypes.h"
+	<vector>
+	<queue>
+	<iostream>
+	<iostream>
+
+1476288340 source:c:\users\math\desktop\khoa le\ball_collision_project_v1\bgi.cxx
+
+1476288353 source:c:\users\math\desktop\khoa le\ball_collision_project_v1\bgiout.cxx
+
+1476288359 source:c:\users\math\desktop\khoa le\ball_collision_project_v1\dibutil.cxx
+	<windows.h>
+	<assert.h>
+	"dibapi.h"
+	"dibutil.h"
+	<stdio.h>
+
+1476288350 c:\users\math\desktop\khoa le\ball_collision_project_v1\dibapi.h
+
+1476288355 c:\users\math\desktop\khoa le\ball_collision_project_v1\dibutil.h
+
+1476288358 source:c:\users\math\desktop\khoa le\ball_collision_project_v1\drawing.cxx
+	<windows.h>
+	<windowsx.h>
+	<math.h>
+	<ocidl.h>
+	<olectl.h>
+	<string.h>
+	"winbgim.h"
+	"winbgitypes.h"
+	"dibapi.h"
+	<iostream>
+
+1476288351 c:\users\math\desktop\khoa le\ball_collision_project_v1\winbgim.h
+	<windows.h>
+	<limits.h>
+	<sstream>
+
+1476288343 c:\users\math\desktop\khoa le\ball_collision_project_v1\winbgitypes.h
+	<windows.h>
+	<tchar.h>
+	<queue>
+	<string>
+	"winbgim.h"
+	<vector>
+
+1476288342 source:c:\users\math\desktop\khoa le\ball_collision_project_v1\file.cxx
+	<windows.h>
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<io.h>
+	<direct.h>
+	<stdlib.h>
+	"dibutil.h"
+	"dibapi.h"
+	"winbgitypes.h"
+
+1476288501 source:c:\users\math\desktop\khoa le\ball_collision_project_v1\main.cpp
+	<conio.h>
+	<stdlib.h>
+	<math.h>
+	<time.h>
+	<iostream>
+	<iomanip>
+	"graphics.h"
+	"BALL.H"
+	"PAIR.H"
+	"WALL.H"
+	"BALLFIELD.H"
+
+1476288338 c:\users\math\desktop\khoa le\ball_collision_project_v1\graphics.h
+	<windows.h>
+	<limits.h>
+	<sstream>
+
+1476288640 c:\users\math\desktop\khoa le\ball_collision_project_v1\ball.h
+	"graphics.h"
+
+1476289540 c:\users\math\desktop\khoa le\ball_collision_project_v1\pair.h
+	<math.h>
+
+1476288821 c:\users\math\desktop\khoa le\ball_collision_project_v1\wall.h
+
+1476290035 c:\users\math\desktop\khoa le\ball_collision_project_v1\ballfield.h
+
+1476288339 source:c:\users\math\desktop\khoa le\ball_collision_project_v1\misc.cxx
+	<windows.h>
+	<windowsx.h>
+	"winbgim.h"
+	"winbgitypes.h"
+	<iostream>
+
+1476288356 source:c:\users\math\desktop\khoa le\ball_collision_project_v1\mouse.cxx
+	<windows.h>
+	<windowsx.h>
+	"winbgim.h"
+	"winbgitypes.h"
+
+1476288347 source:c:\users\math\desktop\khoa le\ball_collision_project_v1\palette.cxx
+	<windows.h>
+	<windowsx.h>
+	"winbgim.h"
+	"winbgitypes.h"
+
+1476288341 source:c:\users\math\desktop\khoa le\ball_collision_project_v1\text.cxx
+	<windows.h>
+	<windowsx.h>
+	<iostream>
+	<sstream>
+	<string>
+	"winbgim.h"
+	"winbgitypes.h"
+
+1476288361 source:c:\users\math\desktop\khoa le\ball_collision_project_v1\winbgi.cxx
+	<windows.h>
+	<windowsx.h>
+	<stdio.h>
+	<iostream>
+	<vector>
+	"winbgim.h"
+	"winbgitypes.h"
+
+1476288345 source:c:\users\math\desktop\khoa le\ball_collision_project_v1\winthread.cxx
+	<windows.h>
+	<windowsx.h>
+	"winbgim.h"
+	"winbgitypes.h"
+	<vector>
+	<queue>
+	<iostream>
+	<iostream>
+
+1476288340 source:c:\users\math\desktop\khoa le\ball_collision_project_v1.2\bgi.cxx
+
+1476288353 source:c:\users\math\desktop\khoa le\ball_collision_project_v1.2\bgiout.cxx
+
+1476288359 source:c:\users\math\desktop\khoa le\ball_collision_project_v1.2\dibutil.cxx
+	<windows.h>
+	<assert.h>
+	"dibapi.h"
+	"dibutil.h"
+	<stdio.h>
+
+1476288350 c:\users\math\desktop\khoa le\ball_collision_project_v1.2\dibapi.h
+
+1476288355 c:\users\math\desktop\khoa le\ball_collision_project_v1.2\dibutil.h
+
+1476288358 source:c:\users\math\desktop\khoa le\ball_collision_project_v1.2\drawing.cxx
+	<windows.h>
+	<windowsx.h>
+	<math.h>
+	<ocidl.h>
+	<olectl.h>
+	<string.h>
+	"winbgim.h"
+	"winbgitypes.h"
+	"dibapi.h"
+	<iostream>
+
+1476288351 c:\users\math\desktop\khoa le\ball_collision_project_v1.2\winbgim.h
+	<windows.h>
+	<limits.h>
+	<sstream>
+
+1476288343 c:\users\math\desktop\khoa le\ball_collision_project_v1.2\winbgitypes.h
+	<windows.h>
+	<tchar.h>
+	<queue>
+	<string>
+	"winbgim.h"
+	<vector>
+
+1476288342 source:c:\users\math\desktop\khoa le\ball_collision_project_v1.2\file.cxx
+	<windows.h>
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<io.h>
+	<direct.h>
+	<stdlib.h>
+	"dibutil.h"
+	"dibapi.h"
+	"winbgitypes.h"
+
+1476288501 source:c:\users\math\desktop\khoa le\ball_collision_project_v1.2\main.cpp
+	<conio.h>
+	<stdlib.h>
+	<math.h>
+	<time.h>
+	<iostream>
+	<iomanip>
+	"graphics.h"
+	"BALL.H"
+	"PAIR.H"
+	"WALL.H"
+	"BALLFIELD.H"
+
+1476288338 c:\users\math\desktop\khoa le\ball_collision_project_v1.2\graphics.h
+	<windows.h>
+	<limits.h>
+	<sstream>
+
+1476288640 c:\users\math\desktop\khoa le\ball_collision_project_v1.2\ball.h
+	"graphics.h"
+
+1476289540 c:\users\math\desktop\khoa le\ball_collision_project_v1.2\pair.h
+	<math.h>
+
+1476288821 c:\users\math\desktop\khoa le\ball_collision_project_v1.2\wall.h
+
+1476290035 c:\users\math\desktop\khoa le\ball_collision_project_v1.2\ballfield.h
+
+1476288339 source:c:\users\math\desktop\khoa le\ball_collision_project_v1.2\misc.cxx
+	<windows.h>
+	<windowsx.h>
+	"winbgim.h"
+	"winbgitypes.h"
+	<iostream>
+
+1476288356 source:c:\users\math\desktop\khoa le\ball_collision_project_v1.2\mouse.cxx
+	<windows.h>
+	<windowsx.h>
+	"winbgim.h"
+	"winbgitypes.h"
+
+1476288347 source:c:\users\math\desktop\khoa le\ball_collision_project_v1.2\palette.cxx
+	<windows.h>
+	<windowsx.h>
+	"winbgim.h"
+	"winbgitypes.h"
+
+1476288341 source:c:\users\math\desktop\khoa le\ball_collision_project_v1.2\text.cxx
+	<windows.h>
+	<windowsx.h>
+	<iostream>
+	<sstream>
+	<string>
+	"winbgim.h"
+	"winbgitypes.h"
+
+1476288361 source:c:\users\math\desktop\khoa le\ball_collision_project_v1.2\winbgi.cxx
+	<windows.h>
+	<windowsx.h>
+	<stdio.h>
+	<iostream>
+	<vector>
+	"winbgim.h"
+	"winbgitypes.h"
+
+1476288345 source:c:\users\math\desktop\khoa le\ball_collision_project_v1.2\winthread.cxx
+	<windows.h>
+	<windowsx.h>
+	"winbgim.h"
+	"winbgitypes.h"
+	<vector>
+	<queue>
+	<iostream>
+	<iostream>
+
