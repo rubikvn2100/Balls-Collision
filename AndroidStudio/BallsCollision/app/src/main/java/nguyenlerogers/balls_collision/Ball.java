@@ -7,7 +7,7 @@ public class Ball {
     private int velX, velY; // vx, vy
     private int numBounces;
 
-    private double radius, m; // Todo: What is m? Mass?
+    private double radius, mass;
     private double ballTime;
     private double ballCollisionTime;
 
@@ -18,40 +18,44 @@ public class Ball {
     public Ball(int foo) {
         // Todo: Code Ball(int) constructor
     }
-    public Ball(double foo, double bar, double baa, double ram, double yew, double dietCoke) {
-        // Todo: Code fully loaded Ball(asdfjkl;) constructor
+    public Ball(double posX, double posY, double velX, double velY, double radius, double ballTime) {
+        this.setPos(posX, posY);
+        this.setVel(velX, velY);
+        this.setRadius(radius);
+        this.setBallTime(ballTime);
+        this.setMass(radius*radius*Math.PI);
     }
 
     /**** Getter Methods ****/
     public int getID() {
-        return id;
+        return this.id;
     }
     public int getPosX() {
-        return posX;
+        return this.posX;
     }
     public int getPosY() {
-        return posY;
+        return this.posY;
     }
     public int getVelX() {
-        return velX;
+        return this.velX;
     }
     public int getVelY() {
-        return velY;
+        return this.velY;
     }
     public int getNumBounces() {
-        return numBounces;
+        return this.numBounces;
     }
-    public double getM() {
-        return m;
+    public double getMass() {
+        return this.mass;
     }
     public double getRadius() {
-        return radius;
+        return this.radius;
     }
     public double getBallTime() {
-        return ballTime;
+        return this.ballTime;
     }
     public double getBallCollisionTime() {
-        return ballCollisionTime;
+        return this.ballCollisionTime;
     }
 
     /**** Setter Methods ****/
@@ -75,8 +79,8 @@ public class Ball {
     public void setRadius(double radius) {
         this.radius = radius;
     }
-    public void setM(double m) {
-        this.m = m;
+    public void setMass(double mass) {
+        this.mass = mass;
     }
     public void setBallTime(double ballTime) {
         this.ballTime = ballTime;
@@ -90,7 +94,9 @@ public class Ball {
         // Todo: Code Ball.updateValue -- Is this now setPosX, setPosY, setVelX, setVelY?
     }
     public void update(double time) {
-        // Todo: Code Ball.update
+        double dt = time - this.getBallTime();
+        // Update the position of the ball.
+        this.incrementPos()
     }
     public void addBounce(int num) {
         this.numBounces += num;
