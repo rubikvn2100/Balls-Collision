@@ -63,6 +63,11 @@ public class Vector
         return new Vector( A.x + B.x, A.y + B.y );
     }
 
+    public static Vector subtraction( Vector A, Vector B )
+    {
+        return new Vector( A.x - B.x, A.y - B.y );
+    }
+
     public Vector getRotate90()
     {
         return new Vector( -y, x );

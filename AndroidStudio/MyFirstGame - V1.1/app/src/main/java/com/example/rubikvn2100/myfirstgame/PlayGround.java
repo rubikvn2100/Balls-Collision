@@ -17,10 +17,12 @@ public class PlayGround
     private double epsilon;
     private double time;
 
-    Paint color;
+    private Paint color;
 
     private LinkedList<Ball> ballList;
     private Collidable collidable;
+
+    private Ball ghostBall;
 
     PlayGround( int left, int top, int right, int bottom )
     {
@@ -37,6 +39,23 @@ public class PlayGround
 
         ballList = new LinkedList<Ball>();
         collidable = new Collidable();
+
+        ghostBall = null;
+    }
+
+    public boolean addBall( Ball ball )
+    {
+        System.out.println("In addBall(): " + ball.toString());
+
+        if( isBallAddable( ball ) )
+        {
+            System.out.println("ball is added");
+            ballList.add( ball );
+            collidable.increment();
+            return true;
+        }
+
+        return false;
     }
 
     public boolean addBall( double px, double py, double vx, double vy, int radius )
@@ -107,6 +126,26 @@ public class PlayGround
         this.epsilon = epsilon;
     }
 
+    public void addMarkerBall( double px, double py )
+    {
+        ghostBall = new Ball( px, py, 0, 0, 5);
+    }
+
+    public void incrementRadiusMarkerBall( int i )
+    {
+        if( ghostBall != null )
+        {
+            ghostBall.setRadius( ghostBall.getRadius() + i );
+        }
+    }
+
+    public Ball removeMarkerBall()
+    {
+        Ball temp = ghostBall;
+        ghostBall = null;
+        return temp;
+    }
+
     private boolean isCollideLeftWall( Ball ball )
     {
         return ball.getPx() - left < ball.getRadius() + epsilon;
@@ -134,6 +173,48 @@ public class PlayGround
 
     private boolean collideWall( int i )
     {
+        Ball ball = ballList.get(i);
+        boolean flag = false;
+
+        if( isCollideLeftWall( ball ) )
+        {
+            if( ball.getVx() < 0 )
+            {
+                ball.negateVx();
+                flag = true;
+            }
+
+        }
+
+        if( isCollideRightWall( ball ) )
+        {
+            if( ball.getVx() > 0 )
+            {
+                ball.negateVx();
+                flag = true;
+            }
+        }
+
+        if( isCollideTopWall( ball ) )
+        {
+            if( ball.getVy() < 0 )
+            {
+                ball.negateVy();
+                flag = true;
+            }
+        }
+
+        if( isCollideBottomWall( ball ) )
+        {
+            if( ball.getVy() > 0 )
+            {
+                ball.negateVy();
+                flag = true;
+            }
+        }
+
+        return flag;
+        /*
         Ball ball = ballList.get(i);
         boolean flag = false;
         if( isCollideLeftWall( ball ) )
@@ -227,6 +308,7 @@ public class PlayGround
         }
 
         return flag;
+        */
         /*
         Ball ball = ballList.get(i);
         boolean flag = false;
@@ -376,6 +458,20 @@ public class PlayGround
 
     private boolean collideBalls( int i, int j )
     {
+        /*
+        Ball A = ballList.get(i);
+        Ball B = ballList.get(j);
+        if( isCollideBalls( A, B ) )
+        {
+            //if( Vector.dot( Vector.subtraction( A.getVelocity(), B.getVelocity() ), new Vector( A.getCenter(), B.getCenter() ) ) < 0 )
+            {
+                ballsCollision( A, B );
+                return true;
+            }
+        }
+
+        return false;
+        */
         Ball A = ballList.get(i);
         Ball B = ballList.get(j);
         if( isCollideBalls( A, B ) )
@@ -433,7 +529,10 @@ public class PlayGround
 
         for( int i = 0; i < ballList.size(); i++)
         {
-            ballList.get(i).draw(canvas);
+            ballList.get(i).draw( canvas );
         }
+
+        if( ghostBall != null )
+            ghostBall.draw( canvas );
     }
 }

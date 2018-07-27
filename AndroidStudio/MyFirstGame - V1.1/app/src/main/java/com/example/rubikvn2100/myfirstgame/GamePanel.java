@@ -67,6 +67,7 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
         player = new Player( BitmapFactory.decodeResource( getResources(), R.drawable.helicopter ), 66, 30, 3 );
         */
         playGround = new PlayGround( 0,0, getWidth() - 0, getHeight() - 0 );
+        playGround.setColor( 0, 0, 0 );
         /*
         playGround.addBall( 1000, 1000,  50, 20, 250 );
         playGround.addBall( 500, 600,  5,-10, 250 );
@@ -74,7 +75,7 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
         playGround.addBall( 1100, 100,  5,-10, 50 );
         */
         playGround.addBall( 5, 10, 320 );
-
+        /*
         for( int i = 0; i < 5; i++ )
         {
             playGround.addBall( 5, 10, 160 );
@@ -89,49 +90,59 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
         {
             playGround.addBall( 5, 10, 10 );
         }
+
+        for( int i = 0; i < 250; i++ )
+        {
+            playGround.addBall( 5, 10, 5 );
+        }
+        */
         //we can safely start the game loop
         thread.setRunning(true);
         thread.start();
 
     }
-
+    private float downX;
+    private float downY;
+    private float upX;
+    private float upY;
+    private long downT;
+    private long upT;
     @Override
     public boolean onTouchEvent( MotionEvent event )
     {
-        /*
         if( event.getAction() ==  MotionEvent.ACTION_DOWN )
         {
-            if( !player.getPlaying() )
-            {
-                player.setPlaying( true );
-            }
-            else
-            {
-                player.setUp( true );
-            }
+            downX = event.getX();
+            downY = event.getY();
+            downT = System.currentTimeMillis();
+            playGround.addMarkerBall( downX, downY );
 
             return true;
         }
 
         if( event.getAction() == MotionEvent.ACTION_UP )
         {
-            player.setUp( false );
+            upX = event.getX();
+            upY = event.getY();
+            upT = System.currentTimeMillis();
+
+            float vx = - ( upX - downX ) / 25f;
+            float vy = - ( upY - downY ) / 25f;
+
+            Ball ball = playGround.removeMarkerBall();
+            ball.setVelocity( new Vector( vx, vy ) );
+            System.out.println( (playGround.addBall( ball ))?"New ball is added":"Cannot add the ball");
+
             return true;
         }
-        */
+
         return super.onTouchEvent( event );
     }
 
     public void update()
     {
-        /*
-        if( player.getPlaying() )
-        {
-            bg.update();
-            player.update();
-        }
-        */
         playGround.update( 1 );
+        playGround.incrementRadiusMarkerBall( 1 );
     }
 
     @Override

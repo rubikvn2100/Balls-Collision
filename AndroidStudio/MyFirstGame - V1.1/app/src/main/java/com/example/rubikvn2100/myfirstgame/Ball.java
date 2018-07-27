@@ -6,8 +6,8 @@ import android.graphics.Paint;
 
 public class Ball
 {
-    Point center;
-    Vector velocity;
+    private Point center;
+    private Vector velocity;
 
     private int radius;
     private double mass;
@@ -15,7 +15,7 @@ public class Ball
     //private double epsilon;
     private double time;
 
-    Paint color;
+    private Paint color;
 
     public double getPx()
     {
@@ -77,7 +77,14 @@ public class Ball
         return mass;
     }
 
-    public double getRadius()
+    public void setRadius( int radius )
+    {
+        this.radius = radius;
+        mass = Math.PI * radius * radius;
+    }
+
+
+    public int getRadius()
     {
         return radius;
     }
