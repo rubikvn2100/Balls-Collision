@@ -138,40 +138,32 @@ public class Ball
         /* Calculate Red */
         if( temperature <= 66 )
             red = 255;
-        else {
-            double dRed = temperature - 60.0;
-            red = (int)(329.70 * Math.pow(dRed,-0.1332047592));
-        }
+        else
+            red = (int)(329.70 * Math.pow( temperature-60.0, -0.1332047592 ));
 
         /* Calculate Green */
-        if( temperature <= 66  ) {
-            double dGreen = temperature;
-            green = (int)(99.47 * Math.log(dGreen) - 161.12);
-        }
-        else {
-            double dGreen = temperature - 60.0;
-            green = (int)(288.12 * Math.pow(dGreen,-0.0755148492));
-        }
+        if( temperature <= 66  )
+            green = (int)(99.47 * Math.log( temperature ) - 161.12);
+        else
+            green = (int)(288.12 * Math.pow( temperature-60.0, -0.0755148492 ));
 
         /* Calculate Blue */
         if( temperature >= 66 )
             blue = 255;
         else {
-            if( temperature <= 19 )
+            if (temperature <= 19)
                 blue = 0;
-            else {
-                double dBlue = temperature - 10.0;
-                blue = (int) (138.52 * Math.log(dBlue) - 305.04);
-            }
+            else
+                blue = (int) (138.52 * Math.log(temperature - 10.0) - 305.04);
         }
 
         /* Double-check and reassign values */
-        if( red < 0 ) red = 0;
-        if( red > 255 ) red = 255;
-        if( green < 0 ) green = 0;
-        if( green > 255 ) green = 255;
-        if( blue < 0 ) blue = 0;
-        if( blue > 255 ) blue = 255;
+        red =   (red<0)?    0   : red;
+        red =   (red>255)?  255 : red;
+        green = (green<0)?  0   : green;
+        green = (green>255)?255 : green;
+        blue =  (blue<0)?   0   : blue;
+        blue =  (blue>255)? 255 : blue;
 
         this.color.setColor(Color.rgb(red, green, blue));
     }
