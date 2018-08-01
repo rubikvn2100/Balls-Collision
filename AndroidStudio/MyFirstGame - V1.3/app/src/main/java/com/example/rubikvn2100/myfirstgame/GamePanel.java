@@ -16,7 +16,7 @@ public abstract class GamePanel extends SurfaceView implements SurfaceHolder.Cal
 {
     protected PlayGround playGround;
     protected MainThread thread;
-
+    private static boolean usingColorTemperature = true;
     public GamePanel( Context context )
     {
         super( context );
@@ -57,7 +57,16 @@ public abstract class GamePanel extends SurfaceView implements SurfaceHolder.Cal
     }
 
     @Override
-    public abstract void surfaceCreated( SurfaceHolder holder );
+    public void surfaceCreated( SurfaceHolder holder )
+    {
+
+        playGround = new PlayGround( 0,0, getWidth() - 0, getHeight() - 0 );
+        playGround.setColor( 0, 0, 0 );
+
+        //we can safely start the game loop
+        thread.setRunning(true);
+        thread.start();
+    }
 
     private float downX;
     private float downY;
@@ -124,5 +133,10 @@ public abstract class GamePanel extends SurfaceView implements SurfaceHolder.Cal
         {
             playGround.draw( canvas );
         }
+    }
+
+    public static boolean isUsingColorTemperature()
+    {
+        return usingColorTemperature;
     }
 }

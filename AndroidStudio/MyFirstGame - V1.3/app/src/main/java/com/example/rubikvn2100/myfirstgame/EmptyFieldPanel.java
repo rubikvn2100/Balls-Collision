@@ -12,14 +12,4 @@ public class EmptyFieldPanel extends GamePanel
     {
         super( context );
     }
-
-    public void surfaceCreated( SurfaceHolder holder )
-    {
-        playGround = new PlayGround( 0,0, getWidth() - 0, getHeight() - 0 );
-        playGround.setColor( 0, 0, 0 );
-
-        //we can safely start the game loop
-        thread.setRunning(true);
-        thread.start();
-    }
 }
