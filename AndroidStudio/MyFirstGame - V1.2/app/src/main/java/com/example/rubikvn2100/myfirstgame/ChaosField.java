@@ -1,13 +1,13 @@
 package com.example.rubikvn2100.myfirstgame;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class game extends AppCompatActivity
+public class ChaosField extends AppCompatActivity
 {
     @Override
     protected void onCreate( Bundle savedInstanceState )
@@ -20,15 +20,13 @@ public class game extends AppCompatActivity
         //set to full screen
         getWindow().setFlags( WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN );
 
-        setContentView( new GamePanel(this ) );
+        setContentView( new ChaosFieldPanel(this ) );
     }
 
 
     @Override
     public boolean onCreateOptionsMenu( Menu menu )
     {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        //getMenuInflater().inflate( R.menu.menu_game, menu );
         return true;
     }
 

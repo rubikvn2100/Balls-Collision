@@ -101,6 +101,7 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
         thread.start();
 
     }
+
     private float downX;
     private float downY;
     private float upX;
@@ -110,6 +111,7 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
     @Override
     public boolean onTouchEvent( MotionEvent event )
     {
+        System.out.println( MotionEvent.actionToString( event.getAction( ) ) );
         if( event.getAction() ==  MotionEvent.ACTION_DOWN )
         {
             downX = event.getX();
@@ -134,6 +136,12 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
             System.out.println( (playGround.addBall( ball ))?"New ball is added":"Cannot add the ball");
 
             return true;
+        }
+
+        if( event.getAction() == MotionEvent.ACTION_MOVE )
+        {
+            // TODO: Update the arrow to turn it
+            System.out.println("Move to x = " + event.getX() + " y = " + event.getY() );
         }
 
         return super.onTouchEvent( event );
