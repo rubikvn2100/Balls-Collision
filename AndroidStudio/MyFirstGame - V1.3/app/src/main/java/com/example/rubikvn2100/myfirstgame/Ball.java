@@ -127,29 +127,29 @@ public class Ball
             return;
         }
 
-        double scalar = 1; // TODO : Color Temperature scalar will need some adjustment
-        int temperature = (int)(scalar * this.getVelocity().getLength());
+        double scalar = 0.3; // TODO : Color Temperature scalar will need some adjustment
+        double temperature = scalar * this.getVelocity().getLength();
         int red, green, blue;
 
         /* Calculate Red */
         if( temperature <= 66 )
             red = 255;
         else {
-            red = temperature - 60;
-            red = 330 * (int)Math.pow(red,-0.1332047592);
+            double dRed = temperature - 60.0;
+            red = (int)(329.70 * Math.pow(dRed,-0.1332047592));
         }
         if( red > 255 ) red = 255;
 
         /* Calculate Green */
         if( temperature <= 66  )
         {
-            green = temperature;
-            green = 99 * (int)Math.log(green) - 161;
+            double dGreen = temperature;
+            green = (int)(99.47 * Math.log(dGreen) - 161.12);
         }
         else
             {
-            green = temperature - 60;
-            green = 288*(int)Math.pow(green,-0.0755148492);
+            double dGreen = temperature - 60.0;
+            green = (int)(288.12 * Math.pow(dGreen,-0.0755148492));
         }
         if( green > 255 ) green = 255;
 
@@ -158,8 +158,8 @@ public class Ball
             blue = 255;
         else
         {
-            blue = temperature - 10;
-            blue = 139*(int)Math.log(blue) - 305;
+            double dBlue = temperature - 10.0;
+            blue = (int)(138.52 * Math.log(dBlue) - 305.04);
         }
         if( green > 255 ) green = 255;
 
