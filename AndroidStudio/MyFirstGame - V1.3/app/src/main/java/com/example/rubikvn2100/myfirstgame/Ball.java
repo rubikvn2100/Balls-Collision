@@ -127,7 +127,7 @@ public class Ball
     {
         if( !GamePanel.isUsingColorTemperature() )
         {
-            this.color.setColor(Color.rgb(255, 255, 255));
+            this.color.setColor(Color.rgb(0, 0, 255));
             return;
         }
 
