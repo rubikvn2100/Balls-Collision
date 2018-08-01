@@ -129,6 +129,13 @@ public abstract class GamePanel extends SurfaceView implements SurfaceHolder.Cal
         {
             // TODO: Update the arrow to turn it
             System.out.println("Move to x = " + event.getX() + " y = " + event.getY() );
+
+            float vx = - ( event.getX() - downX ) / 25f;
+            float vy = - ( event.getY() - downY ) / 25f;
+
+            playGround.getMarkerBall().setVelocity( new Vector( vx, vy ) );
+
+            playGround.getMarkerBall().updateColor();
         }
 
         return super.onTouchEvent( event );

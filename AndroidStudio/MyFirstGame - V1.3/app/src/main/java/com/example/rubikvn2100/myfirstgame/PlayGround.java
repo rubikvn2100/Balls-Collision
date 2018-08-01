@@ -146,6 +146,11 @@ public class PlayGround
         return temp;
     }
 
+    public Ball getMarkerBall()
+    {
+        return ghostBall;
+    }
+
     private boolean isCollideLeftWall( Ball ball )
     {
         return ball.getPx() - left < ball.getRadius() + epsilon;
