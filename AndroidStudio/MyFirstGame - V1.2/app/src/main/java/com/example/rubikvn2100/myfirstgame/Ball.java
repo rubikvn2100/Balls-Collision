@@ -123,7 +123,7 @@ public class Ball
             this.color.setColor(Color.rgb(255, 255, 255));
             return;
         }
-        double scalar = 0.15; // TODO : Color Temperature scalar will need some adjustment
+        double scalar = 0.5; // TODO : Color Temperature scalar will need some adjustment
         int temperature = (int)(scalar * this.getVelocity().getLength() /* this.getRadius()*/);
         int red, green, blue;
 
