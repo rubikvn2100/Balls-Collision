@@ -23,8 +23,8 @@
             android:screenOrientation="landscape" />
         <activity
             android:name=".ChaosField"
-            android:screenOrientation = "landscape">
-        </activity>
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".Custom"></activity>
     </application>
 
 </manifest>
