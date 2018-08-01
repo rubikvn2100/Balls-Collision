@@ -17,6 +17,10 @@ public abstract class GamePanel extends SurfaceView implements SurfaceHolder.Cal
     protected PlayGround playGround;
     protected MainThread thread;
     private static boolean usingColorTemperature = true;
+<<<<<<< HEAD
+=======
+
+>>>>>>> b696dcde19a1ed54709331bbacf01c21ac4cf983
     public GamePanel( Context context )
     {
         super( context );
