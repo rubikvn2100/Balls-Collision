@@ -23,28 +23,28 @@ class ChaosFieldPanel extends GamePanel
 
         for( int i = 0; i < 250; i++ )
         {
-            double vx = rando.nextDouble()*10;
-            double vy = rando.nextDouble()*10;
+            double vx = 5;//rando.nextDouble()*10;
+            double vy = 10;/*rando.nextDouble()*10;
             if(rando.nextBoolean()) vx *= -1;
-            if(rando.nextBoolean()) vy *= -1;
+            if(rando.nextBoolean()) vy *= -1;*/
             playGround.addBall( vx, vy, 5 );
         }
 
         for( int i = 0; i < 125; i++ )
         {
-            double vx = rando.nextDouble()*10;
-            double vy = rando.nextDouble()*10;
+            double vx = 5;//rando.nextDouble()*10;
+            double vy = 10;/*rando.nextDouble()*10;
             if(rando.nextBoolean()) vx *= -1;
-            if(rando.nextBoolean()) vy *= -1;
+            if(rando.nextBoolean()) vy *= -1;*/
             playGround.addBall( vx, vy, 10 );
         }
 
         for( int i = 0; i < 25; i++ )
         {
-            double vx = rando.nextDouble()*10;
-            double vy = rando.nextDouble()*10;
+            double vx = 5;//rando.nextDouble()*10;
+            double vy = 10;/*rando.nextDouble()*10;
             if(rando.nextBoolean()) vx *= -1;
-            if(rando.nextBoolean()) vy *= -1;
+            if(rando.nextBoolean()) vy *= -1;*/
             playGround.addBall( vx, vy, 40 );
         }
         /*
