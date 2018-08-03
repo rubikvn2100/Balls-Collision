@@ -42,7 +42,7 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener
 
             case R.id.button_3:
             {
-                openCustomField();
+                openCustomFieldGetData();
                 break;
             }
         }
@@ -60,9 +60,9 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener
         startActivity( intent );
     }
 
-    public void openCustomField()
+    public void openCustomFieldGetData()
     {
-        Intent intent = new Intent( this, CustomField.class );
+        Intent intent = new Intent( this, CustomFieldGetData.class );
         startActivity( intent );
     }
 }

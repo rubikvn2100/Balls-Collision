@@ -1,8 +1,8 @@
 package com.example.rubikvn2100.myfirstgame;
 
-import android.content.Context;
-import android.os.Bundle;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
@@ -10,6 +10,7 @@ import android.view.WindowManager;
 
 public class CustomField extends AppCompatActivity
 {
+    private static final int N = 4;
     @Override
     protected void onCreate( Bundle savedInstanceState )
     {
@@ -21,8 +22,17 @@ public class CustomField extends AppCompatActivity
         //set to full screen
         getWindow().setFlags( WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN );
 
-        setContentView( R.layout.activity_custom_field );
-        //setContentView( new CustomFieldPanel(this ) );
+        int radius[] = new int[N];
+        int amounts[] = new int [N];
+
+        Intent intent = getIntent();
+        String name;
+        for( int i = 0 ; i < N; i++ )
+        {
+            radius[i] = intent.getIntExtra( "radius_" + i, 0 );
+            amounts[i] = intent.getIntExtra( "amount_" + i, 0 );
+        }
+        setContentView( new CustomFieldPanel(this, radius, amounts ) );
     }
 
 
