@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">MyFirstGame</string>
+    <string name="app_name">Ball</string>
+
+    <string name="main_title">Ball</string>
+    <string name="menu_empty_text">Empty</string>
+    <string name="menu_chaotic_text">Chaotic</string>
+    <string name="menu_custom_text">Custom</string>
 </resources>
