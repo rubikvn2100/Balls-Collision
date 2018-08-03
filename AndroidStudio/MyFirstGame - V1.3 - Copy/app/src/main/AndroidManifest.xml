@@ -24,8 +24,11 @@
         <activity
             android:name=".ChaosField"
             android:screenOrientation="landscape" />
-        <activity android:name=".CustomFieldGetData" />
-        <activity android:name=".CustomField"></activity>
+        <activity
+            android:name=".CustomField"
+            android:screenOrientation="landscape">
+
+        </activity>
     </application>
 
 </manifest>

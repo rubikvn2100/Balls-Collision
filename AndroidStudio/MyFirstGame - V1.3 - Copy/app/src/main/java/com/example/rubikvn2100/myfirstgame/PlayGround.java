@@ -58,34 +58,6 @@ public class PlayGround
         return false;
     }
 
-    public boolean addBall( int radius )
-    {
-        Ball ball = null;
-        int numberOfTry = 10000;
-        Random r = new Random();
-        int px, py, vx, vy;
-        do
-        {
-            px = r.nextInt(1000000000 ) % ( right - left - 2 * radius );
-            py = r.nextInt(1000000000 ) % ( bottom - top - 2 * radius );
-            vx = r.nextInt(1000000000) % 20 - 10;
-            vy = r.nextInt(1000000000) % 20 - 10;
-            ball = new Ball( left + radius + px, top + radius + py, vx, vy, radius );
-
-            if( isBallAddable( ball ) )
-            {
-                ballList.add( ball );
-                collidable.increment();
-                return true;
-            }
-            System.out.println( numberOfTry );
-
-            numberOfTry--;
-        } while( numberOfTry > 0 );
-
-        return false;
-    }
-
     public boolean addBall( double px, double py, double vx, double vy, int radius )
     {
         Ball ball = new Ball( px, py, vx,vy, radius );
