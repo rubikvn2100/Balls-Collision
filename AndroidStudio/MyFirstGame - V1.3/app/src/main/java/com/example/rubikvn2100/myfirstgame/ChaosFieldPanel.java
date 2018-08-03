@@ -25,7 +25,7 @@ class ChaosFieldPanel extends GamePanel
         {
             playGround.addBall( 5 );
         }
-
+//
         for( int i = 0; i < 125; i++ )
         {
             playGround.addBall( 10 );
