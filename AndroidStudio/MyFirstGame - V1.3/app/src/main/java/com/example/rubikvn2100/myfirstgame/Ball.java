@@ -103,16 +103,9 @@ public class Ball
         color = new Paint();
 
         if( GamePanel.isUsingColorTemperature() )
-        {
             updateColor();
-        }
         else
-            {
             color.setColor(Color.rgb(0, 0, 255));
-        }
-            updateColor();
-        //else
-        //    color.setColor(Color.rgb(0, 0, 255));
     }
 
     public void update( float timePass )

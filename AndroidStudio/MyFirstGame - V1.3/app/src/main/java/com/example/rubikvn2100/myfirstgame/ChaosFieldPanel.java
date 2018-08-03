@@ -23,48 +23,24 @@ class ChaosFieldPanel extends GamePanel
 
         for( int i = 0; i < 250; i++ )
         {
-<<<<<<< HEAD
             playGround.addBall( 5 );
-=======
-            double vx = rando.nextDouble()*10;
-            double vy = rando.nextDouble()*10;
-            if(rando.nextBoolean()) vx *= -1;
-            if(rando.nextBoolean()) vy *= -1;
-            playGround.addBall( vx, vy, 5 );
->>>>>>> 48c03defe5bf0ec01917ce0da63c641c59e7aa93
         }
 
         for( int i = 0; i < 125; i++ )
         {
-<<<<<<< HEAD
             playGround.addBall( 10 );
-=======
-            double vx = rando.nextDouble()*10;
-            double vy = rando.nextDouble()*10;
-            if(rando.nextBoolean()) vx *= -1;
-            if(rando.nextBoolean()) vy *= -1;
-            playGround.addBall( vx, vy, 10 );
->>>>>>> 48c03defe5bf0ec01917ce0da63c641c59e7aa93
         }
 
         for( int i = 0; i < 25; i++ )
         {
-<<<<<<< HEAD
             playGround.addBall( 40 );
-=======
-            double vx = rando.nextDouble()*10;
-            double vy = rando.nextDouble()*10;
-            if(rando.nextBoolean()) vx *= -1;
-            if(rando.nextBoolean()) vy *= -1;
-            playGround.addBall( vx, vy, 40 );
         }
         /*
         for( int i = 0; i < 5; i++ )
         {
             playGround.addBall( 5, 10, 160 );
->>>>>>> 48c03defe5bf0ec01917ce0da63c641c59e7aa93
         }
-
+        */
         //we can safely start the game loop
         thread.setRunning(true);
         thread.start();
